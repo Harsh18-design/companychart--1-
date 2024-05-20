@@ -1,0 +1,9 @@
+<div style="height:100px;">
+  <select (change)="onCompanyChange($event.target)">
+    <option *ngFor="let c of companyData" value="{{c.COMPANYID}}">{{c.COMPANYNAME}}</option>
+  </select>
+  <div>
+
+  <canvas id="myChart" height="100px"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
